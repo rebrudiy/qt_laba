@@ -1,37 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>status_buttom</class>
- <widget class="QDialog" name="status_buttom">
+ <class>images</class>
+ <widget class="QDialog" name="images">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>698</width>
+    <height>627</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>4</y>
-     <width>391</width>
-     <height>171</height>
+     <x>20</x>
+     <y>60</y>
+     <width>621</width>
+     <height>501</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>570</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>save</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>220</y>
-     <width>271</width>
+     <x>400</x>
+     <y>580</y>
+     <width>221</width>
      <height>25</height>
     </rect>
    </property>

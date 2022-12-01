@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>status_buttom</class>
- <widget class="QDialog" name="status_buttom">
+ <class>change_ava</class>
+ <widget class="QDialog" name="change_ava">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,27 +13,30 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>4</y>
-     <width>391</width>
-     <height>171</height>
+     <x>40</x>
+     <y>30</y>
+     <width>311</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>220</y>
-     <width>271</width>
+     <x>90</x>
+     <y>250</y>
+     <width>181</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>change photo</string>
    </property>
   </widget>
  </widget>

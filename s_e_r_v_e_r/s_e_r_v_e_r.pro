@@ -1,4 +1,4 @@
-QT       += core gui network
+QT       += core gui network xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,14 +11,20 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    new_host.cpp \
+    save_as_xml.cpp \
     server.cpp
 
 HEADERS += \
     mainwindow.h \
+    new_host.h \
+    save_as_xml.h \
     server.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    new_host.ui \
+    save_as_xml.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

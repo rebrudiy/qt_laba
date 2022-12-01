@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>397</width>
-    <height>312</height>
+    <width>947</width>
+    <height>521</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>220</y>
-      <width>113</width>
+      <x>20</x>
+      <y>400</y>
+      <width>251</width>
       <height>25</height>
      </rect>
     </property>
@@ -27,33 +27,23 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>220</y>
+      <x>280</x>
+      <y>400</y>
       <width>89</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>-&gt;</string>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>181</width>
-      <height>171</height>
-     </rect>
+     <string>send</string>
     </property>
    </widget>
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>620</x>
       <y>20</y>
-      <width>151</width>
-      <height>192</height>
+      <width>211</width>
+      <height>481</height>
      </rect>
     </property>
     <item>
@@ -62,17 +52,53 @@
      </property>
     </item>
    </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>581</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>230</y>
-      <width>89</width>
+      <x>280</x>
+      <y>420</y>
+      <width>91</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>other_info</string>
+     <string>text</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>410</y>
+      <width>231</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>440</y>
+      <width>166</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
     </property>
    </widget>
   </widget>
@@ -81,7 +107,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>397</width>
+     <width>947</width>
      <height>22</height>
     </rect>
    </property>
@@ -95,6 +121,7 @@
     <addaction name="actionSave"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
+    <addaction name="actionchange_ava"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
@@ -104,6 +131,7 @@
     <addaction name="separator"/>
     <addaction name="actionusername"/>
     <addaction name="actionhost"/>
+    <addaction name="actionautomatic_file_reception"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -111,9 +139,29 @@
     </property>
     <addaction name="actionAbout"/>
    </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>view</string>
+    </property>
+    <widget class="QMenu" name="menuchoose_color_of_image">
+     <property name="title">
+      <string>choose color of message</string>
+     </property>
+     <addaction name="actionchoose_info_color"/>
+     <addaction name="actionchoose_message_color"/>
+    </widget>
+    <addaction name="actionchange_background_color"/>
+    <addaction name="menuchoose_color_of_image"/>
+    <addaction name="separator"/>
+    <addaction name="actiondisplay_ip_3"/>
+    <addaction name="actionhide_date"/>
+    <addaction name="separator"/>
+    <addaction name="actionclose_progress_bar"/>
+   </widget>
    <addaction name="menuFIle"/>
    <addaction name="menuSettings"/>
    <addaction name="menuHelp"/>
+   <addaction name="menuview"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionConnect">
@@ -154,6 +202,58 @@
   <action name="actionhost">
    <property name="text">
     <string>host</string>
+   </property>
+  </action>
+  <action name="actionchange_ava">
+   <property name="text">
+    <string>change ava</string>
+   </property>
+  </action>
+  <action name="actionchange_background_color">
+   <property name="text">
+    <string>change background color</string>
+   </property>
+  </action>
+  <action name="actionchoose_info_color">
+   <property name="text">
+    <string>choose info color</string>
+   </property>
+  </action>
+  <action name="actionchoose_message_color">
+   <property name="text">
+    <string>choose message color</string>
+   </property>
+  </action>
+  <action name="actiondisplay_ip_3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>hide ip</string>
+   </property>
+  </action>
+  <action name="actionhide_date">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>hide date</string>
+   </property>
+  </action>
+  <action name="actionclose_progress_bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>close progress bar</string>
+   </property>
+  </action>
+  <action name="actionautomatic_file_reception">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>automatic file reception</string>
    </property>
   </action>
  </widget>
