@@ -1,2 +1,2 @@
 # qt_laba
-qt local messanger
+qt client-server local messanger
